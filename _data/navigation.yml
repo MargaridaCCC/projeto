@@ -1,0 +1,17 @@
+docs_list_title: Margarida Coelho
+docs:
+
+- title: Home
+  url: /
+
+- title: About Me
+  url: aboutme
+
+- title: Projects
+  url: projects
+
+- title: Contacts
+  url: contacts
+
+
+
