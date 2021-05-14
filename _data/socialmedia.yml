@@ -1,8 +1,9 @@
-docs_list_title: Let's chat!
+docs_list_title: Social Media
 docs:
 
 - title: Instagram
-  url: https://www.instagram.com/margaridaccc/
+  url: https://www.instagram.com/margaridaccc/ 
+  image: ../assets/instagram.png
 
 - title: Behance
   url: https://www.behance.net/margaridacoelho

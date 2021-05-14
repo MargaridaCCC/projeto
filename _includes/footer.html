@@ -1,17 +1,19 @@
-<h2>{{ site.data.footer.docs_list_title }}</h2>
-
-<ul>
-    {% for item in site.data.footer.docs %}
-        <li>
-            <a href="{{ item.url }}">
-            {{ item.title }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
-
 <footer>
-    <p>© 2021 Margarida Coelho</p>
+      
+    <h2>{{ site.data.socialmedia.docs_list_title }}</h2>
+
+        <ul>
+         {% for item in site.data.socialmedia.docs %}
+             <li>
+                  <a href="{{ item.url }}">
+                 {{ item.title }}
+                 </a>
+             </li>
+        {% endfor %}
+    </ul>
+
+    <p>© {{ "now" | date: "%Y" }} Margarida Coelho</p>
     <p>Terms and conditions. Privacy policy / your privacy rights.</p>
+
 </footer>
 
