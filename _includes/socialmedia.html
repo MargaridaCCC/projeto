@@ -3,7 +3,7 @@
 <ul>
  {% for item in site.data.socialmedia.docs %}
      <li>
-        <img src="{{ item.image }}">
+        <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.title }}">
           <a href="{{ item.url }}">
          {{ item.title }}
          </a>
