@@ -1,0 +1,22 @@
+docs_list_title: Capacities
+docs:
+
+- title: Colaborative
+  image: team.png
+  content-text: Teamwork is one of the most important skills for me as it allows me to grow and learn from others.
+  alt: team icon
+
+- title: Creative
+  image: creative.png
+  content-text: The creative process is extremely important as it allows me to develop new ideas and distinct and innovative solutions.
+  alt: creative icon
+
+- title: Hard Working
+  image: work.png
+  content-text: Work and development are a priority, that's why I try to work with commitment and dedication in all the projects I propose to develop.
+  alt: Hard working icon
+ 
+- title: Curious
+  image: curious.png
+  content-text: I try to face challenges with curiosity, look for new answers and solutions through new perspectives.
+  alt: curious icon

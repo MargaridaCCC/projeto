@@ -4,12 +4,15 @@ docs:
 - title: Instagram
   url: https://www.instagram.com/margaridaccc/ 
   image: instagram.png
+  alt: instagram logo
 
 - title: Behance
   url: https://www.behance.net/margaridacoelho
   image: behance.png
+  alt: behance logo
 
 - title: LinkedIn
   url: https://www.linkedin.com/in/margarida-coelho-007655199/
   image: linkedin.png
+  alt: linkedin logo
 

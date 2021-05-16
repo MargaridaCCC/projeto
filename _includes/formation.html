@@ -3,13 +3,13 @@
 <ul>
 {% for item in site.data.formation.docs %}
      <li>
-         <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="school logo">
+         <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
           <a href="{{ item.url }}">
             <h3>{{ item.title }}</h3>
          </a>
-          <h4> {{ item.content-title }} </h4>
-          <p> {{ item.content-text }} </p>
-          <p> {{ item.data }} </p>
+          <h4>{{ item.content-title }}</h4>
+          <p>{{ item.content-text }}</p>
+          <p>{{ item.data }}</p>
      </li>
 {% endfor %}
 </ul>

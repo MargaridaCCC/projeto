@@ -1,7 +1,7 @@
-<h2>{{ site.data.tools.docs_list_title }}</h2>
+<h2>{{ site.data.capacities.docs_list_title }}</h2>
 
 <ul>
-{% for item in site.data.tools.docs %}
+{% for item in site.data.capacities.docs %}
      <li>
          <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
          <h3>{{ item.title }}</h3>
@@ -9,4 +9,3 @@
      </li>
 {% endfor %}
 </ul>
-

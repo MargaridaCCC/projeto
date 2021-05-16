@@ -4,24 +4,29 @@ docs:
 - title: Adobe Indesign
   image: indesign.png
   content-text: This is a design tool for building page layout for digital and print media that allows you to develop editorial projects.
+  alt: indesign logo
 
 - title: Adobe Illustrator
   image: illustrator.png
   content-text: Illustrator software for industry standard vector drawings allows you to create logos, icons, book illustrations, packaging and other products.
+  alt: illustrator logo
 
 - title: Adobe Photoshop
   image: photoshop.png
   content-text: Photoshop is a creative tool that allows you to edit and compose photos, digital painting, animation and also graphic design.
- 
+  alt: photoshop logo
+
 - title: Adobe Premier
   image: premier.png
   content-text: It is a video editing software for cinema, TV and the Web, which allows you to develop projects from the establishment of the filming to the final credits.
+  alt: premier logo
 
 - title: Figma
   image: figma.png
   content-text: Figma is a prototyping vector editor based mainly on the web browser, with offline tools for desktop applications.
+  alt: figma logo
 
 - title: Invision
   image: invision.png
   content-text: InVision is a prototyping tool that helps the development of collaborative design projects, such as figma.
-
+  alt: invision logo
