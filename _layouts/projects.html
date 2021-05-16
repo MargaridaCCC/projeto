@@ -3,4 +3,19 @@ layout: default
 title: projects
 ---
 
+<h1>
+    {% if page.tags contains "Alumni" %}
+    FBAUL Alumni Platform
+    {% elsif page.tags contains "Spotify" %}
+    Spotify Streaming
+    {% elsif page.tags contains "Donut" %}
+    Donut Worry
+    {% else %}
+    {% endif %}
+</h1>
+
 {{content}}
+
+
+
+
