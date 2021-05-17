@@ -7,7 +7,7 @@ docs:
   alt: esphc school logo
   content-title: High School - Visual Arts 
   content-text: This is an area that seeks to focus on culture and the arts, offering a set of knowledge that allows the development of the capacity for representation, communication and plastic and graphic expression 
-  data: 2017
+  date: 2017
 
 
 - title: Faculdade de Belas-Artes da Universidade de Lisboa
@@ -16,7 +16,7 @@ docs:
   alt: fbaul school logo
   content-title: Communication Design Degree
   content-text: I learned how to develop creative projects that try to reflect upon society and the users needs. For that I apply my knowledge in editorial design, identity design, information design, interaction design and more.
-  data: 2017-2020
+  date: 2017-2020
 
 - title: Faculdade de Belas-Artes da Universidade de Lisboa
   url: http://www.belasartes.ulisboa.pt
@@ -24,4 +24,4 @@ docs:
   alt: fbaul school logo
   content-title: Post Graduation Studies in Digital Experience Design
   content-text: In my post-graduation studies I’m exploring the relation between design with tecnology, qualificating me to work in multiple areas such as user experience design, user interface design, user research, wifreaming and testing.
-  data: 2020-2021
+  date: 2020-2021
