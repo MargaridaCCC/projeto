@@ -1,11 +1,18 @@
 ---
 layout: pages
 title: About Me
-tags: formation tools capacities
+tags: about formation tools capacities
 permalink: /aboutme/
 ---
 
-<h1>About me</h1>
-
-<p>Hi! My name is Margarida Coelho. I'm a Communication Designer studying Digital Experience Design in the Faculty of Fine Arts of Lisbon, Portugal. My studies currently involved UX / UI skills however the ones I'm most familiar with are research, wireframing and visual design.
-</p>
+<div class="aboutme wrapper">
+    <section>
+        {% include formation.html %}
+    </section>
+    <section>
+        {% include tools.html %}
+    </section>
+    <section>
+        {% include capacities.html %}
+    </section>
+</div>

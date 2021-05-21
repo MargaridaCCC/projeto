@@ -3,15 +3,22 @@ layout: default
 title: pages
 ---
 
-{{ content }}
-
-{% if page.tags contains "socialmedia" %}
-{% include socialmedia.html %}
-
-{% elsif page.tags contains "formation tools capacities" %}
-{% include formation.html %}
-{% include tools.html %}
-{% include capacities.html %}
-
-{% endif %}
-
+<div class="pages wrapper">
+    <div>
+        <h1>
+            {% if page.tags contains "about" %}
+            {{ page.title }}
+            {% elsif page.tags contains "contacts" %}
+            {{ page.title }}
+            {% endif %}
+        </h1>
+        <p>
+            {% if page.tags contains "about" %}
+            Hi! My name is Margarida Coelho. I'm a Communication Designer studying Digital Experience Design in the Faculty of Fine Arts of Lisbon, Portugal. My studies currently involved UX / UI skills however the ones I'm most familiar with are research, wireframing and visual design.
+            {% elsif page.tags contains "contacts" %}
+            Let's get started and create projects together!
+            {% endif %}
+        </p>
+    </div>
+    {{ content }}
+</div>
