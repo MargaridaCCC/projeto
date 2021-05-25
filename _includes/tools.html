@@ -1,0 +1,12 @@
+<h2>{{ site.data.tools.docs_list_title }}</h2>
+
+<ul>
+{% for item in site.data.tools.docs %}
+     <li>
+         <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
+         <h3>{{ item.title }}</h3>
+         <p> {{ item.content-text }} </p>
+     </li>
+{% endfor %}
+</ul>
+
