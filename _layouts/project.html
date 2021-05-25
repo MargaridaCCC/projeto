@@ -1,0 +1,27 @@
+---
+layout: default
+title: projects
+---
+
+<div class="projects wrapper">
+    <div class="projectinfo">
+        <h1>My Projects</h1>
+        <p></p>
+    </div>
+    <section class="projects">
+        <h2>
+            {% if page.tags contains "Alumni" %}
+            FBAUL Alumni Platform
+            {% elsif page.tags contains "Spotify" %}
+            Spotify Streaming
+            {% elsif page.tags contains "Donut" %}
+            Donut Worry
+            {% else %}
+            {% endif %}
+        </h2>
+        {{content}}
+    </section>
+</div>
+
+
+
