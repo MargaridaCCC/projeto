@@ -1,0 +1,34 @@
+@mixin font {
+    font-family: 'Epilogue', Arial, Helvetica, sans-serif;
+}
+
+@mixin heading01 {
+    @include font;
+    font-size: 2rem;
+    line-height: 2.375rem;
+}
+
+@mixin heading02 {
+    @include font;
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+}
+
+@mixin heading03 {
+    @include font;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
+}
+
+@mixin paragraph {
+    @include font;
+    font-size: 1rem;
+    line-height: 1.375rem;
+}
+
+@mixin links {
+    @include font;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    text-decoration: none;
+}
