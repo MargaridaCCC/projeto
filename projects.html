@@ -7,7 +7,9 @@ permalink: /projects/
 {% for projects in site.projects %}
 <div class="projects">
     <a href="{{ site.baseurl }}//projects/{{ projects.slug }}"><img src="{{ site.baseurl }}{{ projects.image }}" alt="{{ projects.title }}"/></a>
-    <h2>{{ projects.title }}</h2>
-{{ projects.description }}
+    <div class="projectsinfo">
+        <h2>{{ projects.title }}</h2>
+        <p>{{ projects.description }}</p>
+    </div>
 </div>
 {% endfor %}

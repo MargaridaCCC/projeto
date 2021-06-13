@@ -228,6 +228,56 @@ p {
     }
 }
 
+.projectsinfo {
+    padding-bottom: $sp-l;
+    @media #{$desktop} {
+        padding-top: $sp-s;
+        padding-bottom: $sp-xxl;
+        box-sizing: border-box;
+    }     
+}
+
+.projectsection {
+    display: flex;
+    flex-direction: column;
+    @media #{$desktop} {
+        flex-flow: row wrap;
+    }
+    .projectcontent {
+        flex: 100%;
+        padding-top: $sp-s;
+        padding-bottom: $sp-s;
+        box-sizing: border-box;
+        @media #{$desktop} {
+            flex: 50%;
+            padding-right: $sp-s;
+        }
+    }
+}
+
+.lists {
+    @include lis;
+    padding-left: $sp-l;
+}
+
+.galeryimages {
+    display: flex;
+    flex-direction: column;
+    @media #{$desktop} {
+        flex-flow: row wrap;
+    }
+    .imagesproject {
+        flex: 100%;
+        padding-top: $sp-s;
+        padding-bottom: $sp-s;
+        box-sizing: border-box;
+        @media #{$desktop} {
+            flex: 50%;
+            padding-right: $sp-s;
+        }
+    }
+}
+
 footer {
     background-color: $secoundary-color;
     color: $primary-color;
