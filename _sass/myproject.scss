@@ -3,7 +3,6 @@
 @import "spacing";
 @import "mediaqueries";
 @import "reset";
-@import "grid";
 
 body {
     @include font;
@@ -34,6 +33,11 @@ header {
         align-items: center;
         list-style: none;
         margin: 10px;
+        @media #{$desktop} {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         li {
             padding: $sp-s $sp-s; 
@@ -56,14 +60,14 @@ header {
     .image-wrapper {
         max-width: 100%;
 	    margin: 0px;
-    }
 
-    .me {
-        display: block;
-	    max-width: 100%;
-	    height: 950px;
-        width: 100%;
-	    object-fit: cover;
+        .me {
+            display: block;
+            max-width: 100%;
+            height: 950px;
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     .quote {
@@ -88,8 +92,8 @@ header {
     }
 }
 
-h3 {
-    @include heading03;
+h1 {
+    @include heading01;
 }
 
 h2 {
@@ -104,23 +108,124 @@ p {
     @include paragraph;
 }
 
-.top {
-    padding-top: 300px;
-}
-
 .information {
     box-sizing: border-box;
     padding: 20px 0px;
+    @media #{$desktop} {
+        padding: 40px 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .imagehome {
+        width: 200px;
+        height: 200px;
+        @media #{$desktop} {
+            min-width: 200px;
+            height: 200px;
+        }
+
+        .iconhome {
+        width: 200px;
+        height: 200px;
+        }
+    }
+
+    .discriptions {
+        @media #{$desktop} {
+            margin: auto 0 auto 50px;
+        }
+    }
 }
 
-.imagehome {
-    width: 200px;
-    height: 200px;
+.socialmedia {
+    padding-top: $sp-l;
+    padding-bottom: $sp-l;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{$desktop} {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .socialist {
+        display: flex;
+        list-style: none;
+        @media #{$desktop} {
+            width: 20%;
+        }
+
+        .socialimages {
+            width: 200px;
+            height: 200px;
+        }
+    }
 }
 
-.iconhome {
-    width: 200px;
-    height: 200px;
+.contactinfo {
+    padding-top: $sp-l;
+    padding-bottom: $sp-l;
+    box-sizing: border-box;
+}
+
+.title {
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.paragraph {
+    max-width: 60%;
+}
+
+.formation {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media #{$desktop} {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .formation_icons{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.tools {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media #{$desktop} {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tools_icons{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.capacities {
+    list-style: none;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    @media #{$desktop} {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .capacities_icons{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 footer {
@@ -141,9 +246,18 @@ footer {
         flex-direction: column;
         align-items: center;
         list-style: none;
+        @media #{$desktop} {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
 
         li {
             padding: $sp-s $sp-s; 
+            @media #{$desktop} {
+                margin: 10px;
+                padding: $sp-xl $sp-xl;
+            }
         }
 
         a {
@@ -161,53 +275,5 @@ footer {
         flex-direction: row;
         justify-content: center;
         padding-bottom: 10px;
-    }
-}
-
-
-@media #{$desktop} {
-
-    header {
-        .navigation {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    }
-    
-    .top {
-        padding-top: 150px;
-        box-sizing: border-box;
-    }
-
-    .information {
-        padding: 40px 0px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-        .discriptions {
-            margin: auto 0 auto 50px;
-        }
-
-        .imagehome {
-            background-color: palegreen;
-            min-width: 200px;
-            height: 200px;
-        }
-    }       
-
-    footer {
-
-        .footersocial {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-        }
-
-        li {
-            margin: 10px;
-            padding: $sp-xl $sp-xl;
-        }
     }
 }

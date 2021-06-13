@@ -1,12 +1,12 @@
 <footer>   
     <h2 class="footertitle">{{ site.data.socialmedia.docs_list_title }}</h2>
-        <ul class="footersocial">
-         {% for item in site.data.socialmedia.docs %}
-             <li>
-                  <a href="{{ item.url }}">
-                 {{ item.title }}
-                 </a>
-             </li>
+    <ul class="footersocial">
+        {% for item in site.data.socialmedia.docs %}
+        <li>
+            <a href="{{ item.url }}">
+            {{ item.title }}
+             </a>
+        </li>
         {% endfor %}
     </ul>
     <p>© {{ "now" | date: "%Y" }} Margarida Coelho</p>

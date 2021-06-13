@@ -6,12 +6,12 @@ description: "Hi! My name is Margarida Coelho. I'm a Communication Designer stud
 ---
 
 <div class="aboutme_wrapper">
-    <section class="lists">
-        <h2>{{ site.data.formation.docs_list_title }}</h2>
-        <ul>
+    <section class="container">
+        <h2 class="title">{{ site.data.formation.docs_list_title }}</h2>
+        <ul class="formation">
             {% for item in site.data.formation.docs %}
                 <li>
-                    <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
+                    <img class="formation_icons" src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
                     <a href="{{ item.url }}">
                     <h3>{{ item.title }}</h3>
                     </a>
@@ -22,24 +22,24 @@ description: "Hi! My name is Margarida Coelho. I'm a Communication Designer stud
             {% endfor %}
         </ul>
     </section>
-    <section class="lists">
-        <h2>{{ site.data.tools.docs_list_title }}</h2>
-        <ul>
+    <section class="container">
+        <h2 class="title">{{ site.data.tools.docs_list_title }}</h2>
+        <ul class="tools">
             {% for item in site.data.tools.docs %}
                 <li>
-                    <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
+                    <img class="tools_icons" src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
                     <h3>{{ item.title }}</h3>
                     <p> {{ item.content-text }} </p>
                 </li>
             {% endfor %}
         </ul>
     </section>
-    <section class="lists">
-        <h2>{{ site.data.capacities.docs_list_title }}</h2>
-        <ul>
+    <section class="container">
+        <h2 class="title">{{ site.data.capacities.docs_list_title }}</h2>
+        <ul class="capacities">
             {% for item in site.data.capacities.docs %}
                 <li>
-                    <img src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
+                    <img class="capacities_icons" src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
                     <h3>{{ item.title }}</h3>
                     <p> {{ item.content-text }} </p>
                 </li>
