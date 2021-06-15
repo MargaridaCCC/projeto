@@ -89,6 +89,18 @@ header {
         right: 0;
         left: 0;  
         background: linear-gradient(to top, rgba(0,0,0,0.7) 30%, rgba(0,0,0,0) 80%);
+        animation-name: gradiant-color;
+        animation-duration: 5s;
+    }
+
+    @keyframes gradiant-color {
+        from {
+            background-color: $details-color;
+        }
+
+        to {
+            background-color: $details-color 60%;
+        }
     }
 }
 
@@ -169,6 +181,11 @@ p {
     padding-top: $sp-l;
     padding-bottom: $sp-l;
     box-sizing: border-box;
+
+    href {
+       text-decoration: none; 
+       color: $details-color;
+    }
 }
 
 .title {
@@ -193,6 +210,18 @@ p {
     .formation_icons{
         width: 200px;
         height: 200px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        color: $secoundary-color;
+    }
+
+    h3:hover {
+        color: $details-color;
     }
 }
 
