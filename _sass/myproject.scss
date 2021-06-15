@@ -182,9 +182,12 @@ p {
     padding-bottom: $sp-l;
     box-sizing: border-box;
 
-    href {
-       text-decoration: none; 
-       color: $details-color;
+    a {
+        color: $secoundary-color;
+    }
+    
+    a:hover {
+        color: $details-color;
     }
 }
 

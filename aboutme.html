@@ -12,7 +12,7 @@ description: "Hi! My name is Margarida Coelho. I'm a Communication Designer stud
             {% for item in site.data.formation.docs %}
                 <li>
                     <img class="formation_icons" src="{{ site.baseurl }}/assets/img/{{ item.image }}" alt="{{ item.alt }}">
-                    <a href="{{ item.url }}">
+                    <a class="itemtitle" href="{{ item.url }}">
                     <h3>{{ item.title }}</h3>
                     </a>
                     <h4>{{ item.content-title }}</h4>
